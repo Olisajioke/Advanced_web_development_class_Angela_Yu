@@ -1,0 +1,7 @@
+{
+    "workbench.editor.autoLockGroups": {
+        "imagePreview.previewEditor": true,
+        "mainThreadWebview-markdown.preview": true
+    },
+    "github.copilot.nextEditSuggestions.fixes": true
+}
