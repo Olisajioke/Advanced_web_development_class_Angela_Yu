@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!*/
+     .container {
+        display: grid;
+        gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-rows: 20px;
+        height: 70vh;
+        margin: 400px;
+
+        
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          margin: 70px;
+          height: 70vh;
+        }
+      } 
+
+      .container >  {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .box1 {
+        background-color: #E72F24;
+        
+        grid-area: 1/1/2/3;
+        
+        
+      }
+
+    .box2 {
+        background-color: #F0F1EC;
+        grid-area: 1/3/2/6;
+        border-left: 9px solid #000;
+        
+      }
+
+
+      .box3 {
+        background-color:#F0F1EC;
+        grid-area: 2/1/3/3;
+        border-top: 9px solid #000;
+        border-bottom: 9px solid #000;
+
+      }
+
+      .box4 {
+        background-color:#F0F1EC;
+        grid-area: 2/3/3/5;
+        border-right: 9px solid #000;
+        border-left: 9px solid #000;
+        border-bottom: 9px solid #000;
+        border-top: 9px solid #000;
+
+      }
+
+    .box5_6 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-area: 2/5/4/6;
+    }
+
+
+    .box5 { 
+        background-color: #004592;
+        border-top: 9px solid #000;
+        border-bottom: 9px solid #000;
+        row-start: 1;
+        row-end: 2; 
+    }
+
+    .box6 {
+      background-color: #F0F1EC;
+      row-start: 2;
+      row-end: 4;
+    }
+
+    .box7 {
+      background-color: #F9D01E;
+      grid-area: 3/3/4/4;
+      border-left: 9px solid #000;
+    }
+
+    .box8 {
+      background-color: #232629;
+      grid-area: 3/4/4/5;
+      border-left: 9px solid #000;
+      border-right: 9px solid #000;
+    }
+    .box9 {
+      background-color: #F0F1EC;
+      grid-area: 3/1/4/3;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+
+  <div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5_6">
+      <div class="box5"></div>
+      <div class="box6"></div>
+    </div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+    <div class="box10"></div>
+  </div>
+</body>
+
+</html>

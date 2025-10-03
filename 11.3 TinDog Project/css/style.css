@@ -1,0 +1,136 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+.f-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  height: auto;
+
+}
+
+
+.iphone {
+  max-height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px 
+
+  
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  
+}
+
+.buts {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  
+}
+
+.t-logos img {
+  max-width: 100%;
+  height: auto;
+  width: 150px;     /* default size */
+}
+
+@media (max-width: 650px) {
+  .leta {
+    align-items: flex-start; /* left align on large screens */
+    text-align: left;
+  }
+
+  .my-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    background-color: azure;
+  }
+
+  .t-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+   .t-logos img {
+    max-width: 100%;
+    width: 60px;   /* shrink size on small screens */
+  }
+}
+
+.my-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 0;
+  min-height: 75vh;
+ }
+
+.my-header {
+  grid-area: 1/1 / 2/ 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.profile-pic {
+  grid-area: 2/2/3/4;
+  place-items: center;
+  
+}
+
+.dog {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.t-logos {
+  grid-area: 3/1/5/5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+}
